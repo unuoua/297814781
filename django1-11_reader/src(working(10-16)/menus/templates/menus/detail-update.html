@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+
+
+{% for item in form.instance.get_contents %}
+<img src="{{ item }}" alt="Mountain View" style="height: 100%; width: 100%";">
+</br>
+{% endfor %}
+
+</body>
+</html>

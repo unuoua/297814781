@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This example uses the addEventListener() method to attach a "click" event to a p element.</p>
+
+<p id="demo">Click me.</p>
+
+<script>
+document.getElementById("demo").addEventListener("click", myFunction);
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "<img src=\"https://i.pinimg.com/originals/7d/85/49/7d8549a4126444cd25769f6d0e8c2d3a.jpg\" alt=\"Mountain View\" style=\"height: 100%; width: 100%\";\">";
+}
+</script>
+
+</body>
+</html>

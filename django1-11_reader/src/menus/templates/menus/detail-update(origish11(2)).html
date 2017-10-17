@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{% load staticfiles %}
+<link rel='stylesheet' href="{% static 'css/bootstrap.min.css'%}" type='text/css'/>
+
+
+<style>
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.caption {
+  position: relative;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+
+}
+
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+
+</style>
+
+
+<style>
+
+
+#content {
+  float: right ;
+  width: 50% ;
+  height: 100% ;
+}
+#navbar {
+  float: right;
+  width: 50%;
+  height: 100% ;
+}
+
+</style>
+
+<style>
+
+
+
+.parallax {
+    /* The image used */
+    background-image: url("http://104.223.109.109:49155/h/5a2c80b017ca38837a0cf71fd0d7c4e3400f6805-428545-1280-1762-jpg/keystamp=1507523700-a3351fb6c9;fileindex=54607516;xres=1280/010.jpg");
+
+    /* Set a specific height */
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.65;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: scroll;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("https://i.pinimg.com/originals/42/5b/7e/425b7e7bd52c298535309d91481833f9.jpg");
+
+    /* Set a specific height */
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.65;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+
+</head>
+
+<body>
+
+
+<div id="content">
+
+<div class="parallax">
+  <div class="caption">
+    <span class="border">Lorem</span>
+  </div>
+</div>
+
+
+</div>
+<div id="navbar">
+
+<div class="parallax2">
+  <div class="caption">
+    <span class="border">Ipsum</span>
+  </div>
+</div>
+
+</div>
+
+</body>

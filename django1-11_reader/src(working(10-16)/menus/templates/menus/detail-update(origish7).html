@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+
+<img src="{{ item }}" alt="Mountain View" style="height: 100%; width: 100%";">
+
+
+<body>
+
+<img src="http://img.bato.to/comics/2015/07/23/1/read55b11db4dfd28/img000001.jpg" alt="Mountain View" style="height: 100%; width: 100%";">
+
+<script type="text/javascript">
+    var images = images,
+        i = 1;
+
+</script>
+
+
+
+    <img id="myButton" src="https://i.pinimg.com/originals/4a/5a/3c/4a5a3c85450ef91d54b0559bd069965a.png" style="height: 100%; width: 100%"/>
+    <script type="text/javascript">
+
+
+        for (var j=images.length; j--;) {
+            var img = new Image();
+            img.src = images[j];
+        }
+
+        document.getElementById('myButton').addEventListener('click', function() {
+            this.src = images[i >= images.length - 1 ? i = 0 : ++i];
+        }, false);
+    </script>
+</body>
+
+
+
+
+<p>
+        <img alt="" src="https://manga.tokyo/wp-content/uploads/2017/01/8a1161df2e3f1ff545fa4bb598749843.jpg"
+            style="height: 100%; width: 100%" id="imgClickAndChange" onclick="changeImage()"  />
+</p>
+
+
+<script language="javascript">
+    function changeImage() {
+
+        if (document.getElementById("imgClickAndChange").src == "https://manga.tokyo/wp-content/uploads/2017/01/8a1161df2e3f1ff545fa4bb598749843.jpg")
+        {
+            document.getElementById("imgClickAndChange").src = "https://i.pinimg.com/originals/72/de/34/72de3413a7e6f06fd51415551a93c497.jpg";
+        }
+        else
+        {
+            document.getElementById("imgClickAndChange").src = "https://manga.tokyo/wp-content/uploads/2017/01/8a1161df2e3f1ff545fa4bb598749843.jpg";
+        }
+    }
+</script>
+
+
+
+
+
+<p>
+        <img alt="" src="https://i.pinimg.com/originals/72/de/34/72de3413a7e6f06fd51415551a93c497.jpg"
+            style="height: 100%; width: 100%" id="image" /></p>
+    <p>
+        <input id="Button1" type="button" value="Show redo" onclick="ShowRedo()" />&nbsp;&nbsp;
+<input id="Button2" type="button" value="Show undo" onclick="ShowUndo()" /></p>
+
+<script language="javascript">
+    function ShowRedo()
+{
+        document.getElementById("image").src = "https://i.pinimg.com/originals/4a/5a/3c/4a5a3c85450ef91d54b0559bd069965a.png";
+    }
+
+    function ShowUndo()
+{
+        document.getElementById("image").src = "https://i.pinimg.com/736x/51/56/67/515667c263798d5a50b4c9109168f980--manga-girl-manga-anime.jpg";
+    }
+</script>
+
+
+</body>
+</html>

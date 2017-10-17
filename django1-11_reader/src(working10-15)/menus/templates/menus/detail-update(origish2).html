@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block head_title %}{{ form.instance.name }} | Menu Items | {{ block.super}}{% endblock head_title %}
+
+{% block content %}
+<h1>{{ form.instance.name }}</h1>
+<div align="center">
+<p>Location: {{ form.instance.restaurant.name }}</p>
+{% if form.instance.contents %}
+Contents
+<ul>
+{% for item in form.instance.get_contents %}
+<img src="{{ item }}" style="max-width:5000px; max-height:5000px;">
+{% endfor %}
+
+</ul>
+{% endif %}
+{% include 'snippets/form-snippet.html' with form=form %}
+</div>
+<style>
+.parallax {
+    /* The image used */
+    background-image: url("https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2014/8356377285_8d850fead4_k.jpg");
+
+    /* Set a specific height */
+    height: 5000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+
+<!-- Container element -->
+<div class="parallax"></div>
+{% endblock %}

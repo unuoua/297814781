@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{% load staticfiles %}
+<link rel='stylesheet' href="{% static 'css/bootstrap.min.css'%}" type='text/css'/>
+
+
+<style>
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.caption {
+  position: relative;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+
+}
+
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+
+
+
+#content {
+  float: right ;
+  width: 50% ;
+  height: 100% ;
+}
+#navbar {
+  float: right;
+  width: 50%;
+  height: 100% ;
+}
+
+
+
+
+
+.parallax {
+    /* The image used */
+    background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/mars_polar_deposits_main.jpg");
+
+    /* Set a specific height */
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.65;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: scroll;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("http://www.myfreetextures.com/wp-content/uploads/2012/07/sand-texture.jpg");
+
+    /* Set a specific height */
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.65;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+A{text-decoration:none}
+
+div {
+    cursor:auto;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<a href='{% url "ipsum" %}'>
+<div id="content">
+<div class="parallax">
+  <div class="caption">
+    <span class="border">Ipsum</span>
+  </div>
+</div>
+</div>
+</a>
+
+<a href='{% url "lorem" %}'>
+<div id="navbar">
+<div class="parallax2">
+  <div class="caption">
+    <span class="border">Lorem</span>
+  </div>
+</div>
+</div>
+</a>
+
+</body>
